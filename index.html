@@ -1,0 +1,116 @@
+<!DOCUTYPE HTML>
+<html>
+<head>
+	<meta charset=UTF-8>
+	<title>期末報告</title>
+	<link rel="stylesheet" type="text/css" href="report01.css">
+</head>
+<body>
+        <div id="one">
+            <p id="til" class="til">Final Present</p>
+            <p class="til">a simple SUDOKU!</p>
+        </div>
+
+        <div id="ele" style="display: none;">
+            <div id="sel">
+                <ol><a href="#one">Homepage</a></ol>
+                <ol><a href="#two">First</a></ol>
+                <ol><a href="#fou">Problem</a></ol>
+                <ol><a href="#six">What</a></ol>
+                <ol><a href="#sev">Change</a></ol>
+                <ol><a href="#eig">Code</a></ol>
+                <ol><a href="#ten">Present</a></ol>
+                <ol><a href="0515438_翁邦晏_sudoku.html">SUDOKU</a></ol>
+            </div>
+        </div>
+
+        <div id="appear"><a href="#ele" onclick="disappear()" id="aa">Appear</a></div>
+
+        <div class="pic" id="pic01">
+            <!-- <img  class="shxt02" src="https://truth.bahamut.com.tw/s01/201710/e9701c2864016ca07e386896c6b91892.JPG" alt="米津玄師" width="100%" height="720px" title="米津玄師" id="little01"> -->
+        </div>
+        <div id="two">
+            <h2>原先構想</h2>
+        </div> 
+
+        <div id="thr">
+            <table>
+                <tr>
+                    <td>a1</td>
+                    <td>b1</td>
+                    <td>c1</td>
+                </tr>
+
+                <tr>
+                    <td>a2</td>
+                    <td>b2</td>
+                    <td>c2</td>
+                </tr>
+                
+                <tr>
+                    <td>a3</td>
+                    <td>b3</td>
+                    <td>c3</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="pic" id="pic02"></div>
+
+        <div id="fou">
+            <p id="ff" class="ff">遇到問題</p>
+            <p class="ff">簡單的說，我努力了但解決不了。</p>
+            <img  class="shxt02" src="miii.png" alt="問題九宮格"height=" 360px" title="問題九宮格" id="little01"> 
+        </div>
+
+        <div class="pic" id="pic03"></div>
+
+        <div id="six">
+            <p id="sisi">問題說明</p>
+        </div>
+
+        <div class="pic" id="pic04"></div>
+
+        <div id="sev">
+            <p class="sese" id="sese">改變作法</p>
+            <p class="sese">星期三下午，也就是昨天，開始趕工。</p>
+        </div>
+
+        <div class="pic" id="pic05"></div>
+
+        <div id="eig">
+            <p class="eiei" id="eiei">所使用程式碼</p>
+            <p class="eiei">基本款</p>
+        </div>
+
+        <div id="nin">
+            <nav>
+                <li>Array</li>
+                <li>Random</li>
+                <li>.innerText</li>
+                <li>.onclick</li>
+                <li>MouseEvent</li>
+            </nav>
+        </div>
+
+        <div class="pic" id="pic06"></div>
+
+        <div id="ten">
+            <h2 id="tete" href="0515438_翁邦晏_sudoku.html">Present Time</h2>
+        </div>
+
+        <script>
+            var cc = 1;
+            function disappear(){
+                var dis = document.getElementById("ele");
+                if(cc == 0){
+                    dis.style.display = "none";
+                    cc = cc + 1;
+                }else{
+                    dis.style.display = "";
+                    cc = cc - 1;
+                }
+            }
+        </script>
+</body>
+</html>

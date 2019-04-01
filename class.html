@@ -1,0 +1,60 @@
+<!DOCUTYPE HTML>
+<html>
+<head>
+	<meta charset=UTF-8>
+	<title>數獨小遊戲</title>
+	<link rel="stylesheet" type="text/css" href="kabk_sudoku.css">
+	<script type="text/javascript" src="kabk_sudoku.js"></script>
+	<script type="text/javascript" src="kabk_choose.js"></script>
+</head>
+<body>
+	<article id="container">
+		<h2>SUDOKU in 2018</h2>
+		<p align=center>數獨的<a href="https://tw.answers.yahoo.com/question/index?qid=20081206000016KK00677">產生方式</a>參考</p>
+		<div id="divvv">
+			<nav align=center>
+				<ol id="easy01" onclick="te()">簡單版</ol>
+				<ol><a src="kabk_sudoku.js" onclick="getta()">生成版</a></ol>
+				<ol><a src="kabk_choose.js" onclick="retry()">重新開始</a></ol>
+				<ol><a src="kabk_choose.js" onclick="nonono()">Done</a></ol>
+			</nav>
+
+			<nav id="vava" style="display: none;">
+				<ol id="nothing01"><a src="kabk_choose.js" onclick="alrea()">第一解</a></ol>
+				<ol id="nothing02"><a src="kabk_choose.js" onclick="make()">第二解</a></ol>
+				<ol id="nothing03"><a onclick='alert("鏡射法，將題庫各種鏡射，尚未想到解法。");'>第三解</a></ol>
+			</nav>
+			<p id="score" src="kabk_choose.js" align=center>Current Score: </p>
+			
+			<script>
+				var s = 0;
+				function te(){
+					if(s == 0){
+						var ss = document.getElementById("vava");
+						ss.style.display = "block";
+						s = s + 1;
+					}else{
+						document.getElementById("vava").style.display = "none";
+						s = s - 1;
+					}
+				}
+			</script>
+		</div>
+	</article>
+
+	<footer>
+		<nav align=center>
+			<li class="#contextmenu" onclick="a001()">1</li>
+			<li class="#contextmenu" onclick="a002()">2</li>
+			<li class="#contextmenu" onclick="a003()">3</li>
+			<li class="#contextmenu" onclick="a004()">4</li>
+			<li class="#contextmenu" onclick="a005()">5</li>
+			<li class="#contextmenu" onclick="a006()">6</li>
+			<li class="#contextmenu" onclick="a007()">7</li>
+			<li class="#contextmenu" onclick="a008()">8</li>
+			<li class="#contextmenu" onclick="a009()">9</li>
+			<li class="#contextmenu" onclick="a010()">E</li>
+		</nav>
+	</footer>
+</body>
+</html>
